@@ -10,6 +10,6 @@ RUN set -e; \
 	pip install --upgrade pip; \
 	pip install -r requirements.txt; \
 	apk del .build-deps;
-EXPOSE 5000
+EXPOSE 5001
 VOLUME /application
-CMD uwsgi --http :5000  --manage-script-name --mount /application=flask_app:app --enable-threads --processes 5
+CMD uwsgi --http :5001  --manage-script-name --mount /application=flask_app:app --enable-threads --processes 5

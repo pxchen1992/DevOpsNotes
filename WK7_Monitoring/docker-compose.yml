@@ -5,6 +5,6 @@ services:
     image: jr/flask_app
     container_name: webapp
     expose:
-      - 5000
+      - 5001
     ports:
-      - 5000:5000
+      - 5001:5001
